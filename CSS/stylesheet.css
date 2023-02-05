@@ -5,3 +5,10 @@ h1{
 body{
     background-color: rgb(218, 230, 195);
 }
+
+nav {
+    background-color: rgb(235, 214, 174);
+    padding: 15px;
+    margin: 2rem;
+    text-align: center;
+}
