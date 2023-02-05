@@ -19,3 +19,8 @@ nav {
 .nav-menu {
     margin: 5%;
 }
+
+#header {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+}
