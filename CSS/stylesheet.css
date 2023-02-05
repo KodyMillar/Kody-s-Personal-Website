@@ -4,6 +4,8 @@ h1{
 
 body{
     background-color: rgb(218, 230, 195);
+    width: 90%;
+    margin:auto;
 }
 
 nav {
@@ -11,4 +13,9 @@ nav {
     padding: 15px;
     margin: 2rem;
     text-align: center;
+    font-size: 18px;
+}
+
+.nav-menu {
+    margin: 5%;
 }
