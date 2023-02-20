@@ -1,26 +1,62 @@
 h1{
     color: rgb(23, 76, 161);
+    text-align: center;
 }
 
-body{
+body {
     background-color: rgb(218, 230, 195);
     width: 90%;
     margin:auto;
 }
 
-nav {
+header {
     background-color: rgb(235, 214, 174);
-    padding: 15px;
+    height: 130px;
+    padding: 15px 15px 30px;
     margin: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
     font-size: 18px;
 }
 
+h2 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 17px;
+}
+
 .nav-menu {
-    margin: 5%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+.nav-menu a {
+    padding: 10px 20px;
+    margin: 0 50px;
 }
 
 #header {
+    font-size: 30px;
     font-family: Montserrat, sans-serif;
     font-weight: 700;
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 550px 200px;
+   column-gap: 30px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(235, 214, 174);
+    padding: 1px 0;
+    margin-bottom: 20px;
 }
