@@ -32,11 +32,19 @@ p {
     display: flex;
     justify-content: center;
     margin-right: 5%;
+    color: rgb(112, 15, 109)
+    
 }
 
 .nav-menu a {
     padding: 10px 20px;
     margin: 0 50px;
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 5%;
+    margin-top: 0;
 }
 
 #header {
@@ -54,4 +62,13 @@ p {
    column-gap: 30px;
 }
 
+footer {
+    text-align: center;
+    background-color: rgb(235, 214, 174);
+    padding: 1px 0;
+    margin-bottom: 20px;
+}
 
+.footer-margin {
+    margin-top: 230px;
+}
