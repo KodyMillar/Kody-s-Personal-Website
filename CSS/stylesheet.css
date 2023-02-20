@@ -6,7 +6,7 @@ h1{
 body {
     background-color: rgb(218, 230, 195);
     width: 90%;
-    margin:auto;
+    margin: auto;
 }
 
 header {
@@ -16,7 +16,17 @@ header {
     margin: 2rem;
     margin-bottom: 3rem;
     text-align: center;
-    font-size: 18px;
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+
+#homepage-header {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
 }
 
 h2 {
@@ -32,27 +42,13 @@ p {
     display: flex;
     justify-content: center;
     margin-right: 5%;
-    color: rgb(112, 15, 109)
-    
+    color: rgb(112, 15, 109);
+    font-size: 18px;
 }
 
 .nav-menu a {
     padding: 10px 20px;
-    margin: 0 50px;
-}
-
-h1 {
-    font-size: 34px;
-    margin-bottom: 5%;
-    margin-top: 0;
-}
-
-#header {
-    font-size: 30px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    margin-bottom: 5%;
-    margin-top: 0;
+    margin: 0 20px;
 }
 
 .grid {
@@ -69,6 +65,6 @@ footer {
     margin-bottom: 20px;
 }
 
-.footer-margin {
+.secondpage-footer {
     margin-top: 230px;
 }
