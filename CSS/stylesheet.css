@@ -42,8 +42,8 @@ p {
     font-size: 18px;
 }
 
-.nav-menu a {
-    padding: 10px 20px;
+.nav-menu li {
+    padding: 20px 20px;
     margin: 0 20px;
 }
 
