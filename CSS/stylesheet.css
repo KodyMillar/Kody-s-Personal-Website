@@ -6,7 +6,7 @@ body {
 
 header {
     background-color: rgb(235, 214, 174);
-    height: 130px;
+    height: 150px;
     padding: 15px 15px 30px;
     margin: 2rem 2rem 3rem;
     text-align: center;
@@ -15,9 +15,8 @@ header {
 h1 {
     color: rgb(23, 76, 161);
     text-align: center;
-    font-size: 34px;
+    font-size: 26px;
     margin-bottom: 5%;
-    margin-top: 0;
 }
 
 #homepage-header {
@@ -30,27 +29,28 @@ h2 {
 }
 
 p {
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .nav-menu {
     list-style-type: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-right: 5%;
     color: rgb(112, 15, 109);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .nav-menu li {
-    padding: 20px 20px;
+    padding: 10px 20px;
     margin: 0 20px;
 }
 
 .grid {
    display: grid;
    grid-template-columns: 2fr 1fr;
-   grid-template-rows: 550px 200px;
+   grid-template-rows: 1fr;
    column-gap: 30px;
 }
 
@@ -58,9 +58,42 @@ footer {
     text-align: center;
     background-color: rgb(235, 214, 174);
     padding: 1px 0;
+    margin-top: 300px;
     margin-bottom: 20px;
 }
 
 .secondpage-footer {
     margin-top: 230px;
+}
+
+
+@media (min-width: 600px) {
+    header {
+        background-color: rgb(235, 214, 174);
+        height: 150px;
+        padding: 15px 15px 30px;
+        margin: 2rem 2rem 3rem;
+        text-align: center;
+    }
+
+    h1 {
+        color: rgb(23, 76, 161);
+        text-align: center;
+        font-size: 34px;
+        margin-bottom: 5%;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .nav-menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 5%;
+        color: rgb(112, 15, 109);
+        font-size: 18px;
+    }
 }
