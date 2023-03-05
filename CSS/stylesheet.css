@@ -15,7 +15,7 @@ header {
 h1 {
     color: rgb(23, 76, 161);
     text-align: center;
-    font-size: 32px;
+    font-size: 34px;
     margin-bottom: 5%;
 }
 
@@ -29,7 +29,7 @@ h2 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .nav-menu {
@@ -37,7 +37,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* margin-right: 5%; */
     color: rgb(112, 15, 109);
     font-size: 20px;
 }
@@ -50,7 +49,6 @@ p {
 .grid {
    display: grid;
    grid-template-columns: 2fr 1fr;
-   /* grid-template-rows: 1fr; */
    column-gap: 30px;
 }
 
@@ -69,7 +67,6 @@ footer {
 .course-list {
     display: flex;
     flex-direction: column;
-    /* flex-basis: 250px; */
 }
 
 .course div {
@@ -100,15 +97,7 @@ footer {
     }
 
     h1 {
-        color: rgb(23, 76, 161);
-        text-align: center;
-        font-size: 34px;
-        margin-bottom: 5%;
         margin-right: 3%;
-    }
-
-    p {
-        font-size: 17px;
     }
 
     .nav-menu {
