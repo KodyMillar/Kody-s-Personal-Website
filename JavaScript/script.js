@@ -4,10 +4,24 @@ courses = [
     {code: "ACIT 1630", name: "Database Systems"}
 ];
 
-code = prompt("Please enter a 4 digit course code: ");
-if (code.length != 4 || isNaN(code) == true) {
-    do {
-        code = prompt("Invalid entry. Please enter a 4 digit number: ");
-    }
-    while (code.length != 4 || isNaN(code) == true) 
+
+do {
+    code = prompt("Please enter a 4 digit course code: ");
 }
+while (code.length !== 4 || isNaN(code) === true); 
+
+
+for (let course of courses) {
+    if (course["code"].includes(code)) {
+        console.log(`Yes, I am taking the course: ${course["code"]} - ${course["name"]}`);
+        break;
+    }
+
+    else if (courses.indexOf(course) === courses.length - 1) {
+        courses.push({code: code, name: null});
+        console.log(`Successfully added new course code ${code} to courses list`);
+        console.log(courses);
+        break;
+    }
+}
+
