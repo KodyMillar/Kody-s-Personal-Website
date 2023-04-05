@@ -25,3 +25,6 @@ for (let course of courses) {
     }
 }
 
+document.body.style.marginBottom = "5px"
+
+// createCourseArray()
