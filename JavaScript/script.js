@@ -1,42 +1,56 @@
-// courses = [
-//     {code: "ACIT 1420", name: "Introduction to Systems Administration"}, 
-//     {code: "ACIT 1515", name: "Scripting for IT"},
-//     {code: "ACIT 1630", name: "Database Systems"}
-// ];
+
+const courses = document.querySelectorAll(".name-date");
+
 
 function createCourseArray(){
-    // const courseName = document.querySelectorAll(".course .course-name")
-    // const courseDate = document.querySelectorAll(".course .course-date")
-    const courses = document.querySelectorAll(".name-date")
-    console.log(courses)
-    let courseArray = []
+    const courseArray = [];
     for (let name of courses){
-        const courseName = name.querySelector(".course-name").textContent
-        const courseDate = name.querySelector(".course-date").textContent
-        courseArray.push({code: `${courseName}`, date: `${courseDate}`})
+        const courseName = name.querySelector(".course-name").textContent;
+        const courseDate = name.querySelector(".course-date").textContent;
+        courseArray.push({code: `${courseName}`, date: `${courseDate}`});
     }
+ 
+    return courseArray;
 }
 
-createCourseArray()
+
+function findCourse(courseList){
+    do {
+        code = prompt("Please enter a 4 digit course code: ");
+    }
+    while (code.length !== 4 || isNaN(code) === true);
+
+    for (let course of courseList){
+        if (course["code"].includes(code)){
+            document.getElementById(code).style.backgroundColor = "green";
+            return;
+            }
+        }
+    
+    const courseListDiv = document.querySelector("#course-list");
+    const courseSection = document.createElement("section");
+    courseSection.className = "course course-border";
+    const nameDate = document.createElement("div");
+    courseListDiv.appendChild(courseSection);
+    courseSection.appendChild(nameDate);
+    const description = document.createElement("div");
+    courseSection.appendChild(description);
+    const courseName = document.createElement("a");
+    courseName.href = "#"
+    const courseDate = document.createElement("p");
+    courseName.textContent = code;
+    courseName.className = "course-name";
+    courseDate.textContent = "Fall 2020";
+    courseDate.className = "course-date"
+    nameDate.appendChild(courseName);
+    nameDate.appendChild(courseDate);
+    const courseDescription = document.createElement("p");
+    courseDescription.textContent = "N/A";
+    description.appendChild(courseDescription);
+    
+}
 
 
-// do {
-//     code = prompt("Please enter a 4 digit course code: ");
-// }
-// while (code.length !== 4 || isNaN(code) === true); 
 
-
-// for (let course of courses) {
-//     if (course["code"].includes(code)) {
-//         console.log(`Yes, I am taking the course: ${course["code"]} - ${course["name"]}`);
-//         break;
-//     }
-
-//     else if (courses.indexOf(course) === courses.length - 1) {
-//         courses.push({code: code, name: null});
-//         console.log(`Successfully added new course code ${code} to courses list`);
-//         console.log(courses);
-//         break;
-//     }
-// }
+findCourse(createCourseArray());
 
